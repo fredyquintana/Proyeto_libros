@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 //create the Insert class and inherit from the Jframe class
-public class Insertar extends JFrame {
+public class Perdidas extends JFrame {
         //create the text box variables
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -102,7 +102,6 @@ public class Insertar extends JFrame {
 		textCorreo.setColumns(10);
 		textCorreo.setBounds(134, 134, 127, 20);
 		contentPane.add(textGenero);
-		
 		textCon = new JTextField();
 		textCon.setColumns(10);
 		textCon.setBounds(134, 159, 127, 20);
