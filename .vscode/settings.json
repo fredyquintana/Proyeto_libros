@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\KARLOS\\Favorites\\Desktop\\Programacion I\\TERCER SEMESTRE\\Paradigmas de programacion\\java y mariaDB\\mysql-connector-java-8.0.26.jar"
+    ]
+}
