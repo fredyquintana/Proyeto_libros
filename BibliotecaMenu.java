@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class BibliotecaMenu extends JFrame {
 
     public BibliotecaMenu() {
-        setTitle("MenÃº Principal - Biblioteca");
+        setTitle("Menu Principal - Biblioteca");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 300);
         setLocationRelativeTo(null);
@@ -38,7 +38,16 @@ public class BibliotecaMenu extends JFrame {
         usuarioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //usuario
+                dispose(); // Close the current frame
+                // Add the code to open the main menu frame here
+                try {
+                    MenuUsuarios frame = new MenuUsuarios(); // Replace "Insertar" with the actual class name of your main menu frame
+                    frame.setVisible(true);
+                    frame.setSize(1000, 600);
+                    dispose();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
