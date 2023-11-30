@@ -15,30 +15,53 @@ public class BibliotecaMenu extends JFrame {
 
         JButton libroButton = createMenuButton("Libro");
         JButton usuarioButton = createMenuButton("Usuario");
-        JButton perdidasButton = createMenuButton("PÃ©rdidas");
+        JButton perdidasButton = createMenuButton("Perdidas");
 
         libroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                abrirInterfazLibro();
+                
+                dispose(); // Close the current frame
+                // Add the code to open the main menu frame here
+                try {
+                    MenuLibros frame = new MenuLibros(); // Replace "Insertar" with the actual class name of your main menu frame
+                    frame.setVisible(true);
+                    frame.setSize(1000, 600);
+                    dispose();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+           
             }
         });
 
         usuarioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                abrirInterfazUsuario();
+                //usuario
             }
         });
 
         perdidasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                abrirInterfazPerdidas();
+                dispose(); // Close the current frame
+                // Add the code to open the main menu frame here
+                try {
+                    MenuPrestamos frame = new MenuPrestamos(); // Replace "Insertar" with the actual class name of your main menu frame
+                    frame.setVisible(true);
+                    frame.setSize(1000, 600);
+                    dispose();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+           
+            
             }
         });
 
         add(libroButton);
+        
         add(usuarioButton);
         add(perdidasButton);
     }
