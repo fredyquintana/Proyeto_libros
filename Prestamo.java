@@ -77,8 +77,5 @@ public Prestamo(int id, String id_libro, String fecha_entrega, String fecha_devo
         return id + "|"+ id_libro + "|"+ fecha_entrega+ "|"+ fecha_devolucion + "|"+ cantidad + "|";
     }
 
-
-
-    
-    
+  
 }
